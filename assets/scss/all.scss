@@ -1,5 +1,14 @@
-@import './layout/header.scss';
+// base
+@import './base/variable';
+@import './base/base';
+
+// utils
+@import './utils/color';
+
+// layout
 @import './layout/footer.scss';
+@import './layout/header.scss';
+@import './layout/aside.scss';
 
 
 @import './pages/index.scss';
