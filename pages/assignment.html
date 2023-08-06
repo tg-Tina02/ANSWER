@@ -11,11 +11,11 @@
   </head>
   <body>
 
-    <div class="container-xxl Assignment">
+    <div class="container-xxl">
       <div class="row">
-        <!-- 左邊 -->
+        <!-- aside -->
         <div class="col-3">
-          <%- include('./layout/aside'); -%>
+          <%- include('./layout/aside', {page: "assignment"}); -%>
         </div>
 
         <!-- 右邊 -->
@@ -24,11 +24,17 @@
           <nav class="row align-items-center pb-4">
             <h2 class="col-auto fs-4 fw-bold me-5">Assignment</h2>
 
-            <div class="col-auto fw-bold">All Courses <a href="javascript:;"><i class="bi bi-caret-down-fill ms-2 text-success"></i></a></div>
+            <div class="col-auto fw-bold"><a href="javascript:;" class="d-flex">All Courses<span class="material-symbols-outlined ms-2 link-success">
+              expand_more
+              </span></a></div>
             
             <ul class="col-auto list-unstyled d-flex gap-4 ms-auto mb-0">
-              <li><a href="javascript:;"><i class="bi bi-search"></i></a></li>
-              <li><a href="javascript:;"><i class="bi bi-bell-fill"></i></a></li>
+              <li><a href="javascript:;"><span class="material-symbols-outlined">
+                search
+                </span></a></li>
+              <li><a href="javascript:;"><span class="material-symbols-outlined bold">
+                notifications_active
+                </span></a></li>
             </ul>
           </nav>
 
@@ -36,7 +42,9 @@
           <div class="row gx-3">
             <!-- 左邊 -->
             <div class="col-4">
-              <div class="mb-2 fw-bold">All (4) <a href="javascript:;"><i class="bi bi-caret-down-fill ms-2 text-success"></i></a></div>
+              <div class="mb-2 fw-bold">All (4) <a href="javascript:;"><span class="material-symbols-outlined ms-2 link-success">
+                expand_more
+                </span></a></div>
               <div class="card">
                 <ul class="list-group list-group-flush">
                   <!-- 1 -->
@@ -100,7 +108,9 @@
                     <div class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</div>
                     <div class="fw-bold">Please check this file for me, thanks!</div>
                   </div>
-                  <a href="javascript:;"><i class="bi bi-three-dots-vertical"></i></a>
+                  <a href="javascript:;"><span class="material-symbols-outlined">
+                    more_vert
+                    </span></a>
                 </div>
                 <!-- card-body -->
                 <div class="card-body">
@@ -117,7 +127,9 @@
                         What is the gap or extra space below image?
                       </p>
                       <button class="fw-bold btn btn-light py-2 px-3 border rounded-1 mb-3">
-                        <i class="bi bi-file-earmark-zip"></i>
+                        <span class="material-symbols-outlined">
+                          attach_file
+                          </span>
                         HW-2-David.zip
                       </button>
                     </div>
@@ -132,8 +144,12 @@
                       <div class="fw-bold mb-1 d-flex justify-content-between">
                         Andy Chen (You)
                         <ul class="list-unstyled d-flex gap-3 mb-0">
-                          <li><a href="javascript:;"><i class="bi bi-star"></i></a></li>
-                          <li><a href="javascript:;"><i class="bi bi-pencil-fill"></i></a></li>
+                          <li><a href="javascript:;"><span class="material-symbols-outlined">
+                            grade
+                            </span></a></li>
+                          <li><a href="javascript:;"><span class="material-symbols-outlined bold">
+                            edit
+                            </span></a></li>
                         </ul>
                       </div>
                       <div class="fs-8 text-gray mb-3">13:24 AM (1 hours ago)</div>
@@ -159,8 +175,12 @@
               <!-- footer -->
               <div class="d-flex align-items-center justify-content-between">
                 <ul class="list-unstyled d-flex fs-4 gap-2 mb-0">
-                  <li><a href="javacript:;" class="p-2"><i class="bi bi-arrow-left-short"></i></a></li>
-                  <li><a href="javacript:;" class="p-2"><i class="bi bi-arrow-right-short"></i></a></li>
+                  <li><a href="javacript:;" class="p-2"><span class="material-symbols-outlined">
+                    navigate_before
+                    </span></a></li>
+                  <li><a href="javacript:;" class="p-2"><span class="material-symbols-outlined">
+                    navigate_next
+                    </span></a></li>
                 </ul>
                 <button class="btn btn-outline-success ms-auto">Mark as read</button>
                 <button class="btn btn-success ms-3" id="Reply">Reply</button>

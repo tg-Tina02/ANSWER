@@ -27,9 +27,17 @@ textarea{
 ::placeholder{
     color: $gray-400;
 }
-// .material-symbols-outlined{
-//     vertical-align: middle;
-// }
+.material-symbols-outlined{
+    vertical-align: middle;
+    // background: pink;
+    &.bold{
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+}
 
 .img-member{
     width: 40px;
@@ -46,4 +54,44 @@ textarea{
 }
 .aa{
     width: 40px;
+}
+
+.table{
+    tr>*{
+        padding: 19px 0 17px;
+    }
+    tbody{
+        th{
+            font-weight: normal;
+        }
+    } 
+    tbody>tr:hover{
+        background: $gray-100;
+    }
+    thead th:first-of-type,tbody th{
+        // background: pink;
+        width: 15%;
+    }
+    thead th:nth-of-type(2),tbody td:nth-of-type(1){
+        // background: rgb(235, 114, 134);
+        width: 25%;
+    }
+    thead th:nth-of-type(3),tbody td:nth-of-type(2){
+        // background: rgb(225, 93, 115);
+        width: 40%;
+    }
+}
+.page-link{
+    color: $gray-900;
+    border-color: #198754;
+    height: 100%;
+    &:hover{
+        background: $gray-100;
+        color: inherit;
+        border-color: #198754;
+    }
+    &.active{
+        background: #198754;
+        color: #fff;
+    }
 }

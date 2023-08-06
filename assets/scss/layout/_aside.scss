@@ -1,5 +1,7 @@
 .aside{
     li{
-        border-left: 4px solid $gray-100;
+        a{
+            border-left: 4px solid $gray-100;
+        }
     }
 }
