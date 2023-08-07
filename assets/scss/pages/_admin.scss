@@ -1,0 +1,25 @@
+.table{
+    tr>*{
+        padding: 19px 0 17px;
+    }
+    tbody{
+        th{
+            font-weight: normal;
+        }
+    } 
+    tbody>tr:hover{
+        background: $gray-100;
+    }
+    thead th:first-of-type,tbody th{
+        // background: pink;
+        width: 15%;
+    }
+    thead th:nth-of-type(2),tbody td:nth-of-type(1){
+        // background: rgb(235, 114, 134);
+        width: 25%;
+    }
+    thead th:nth-of-type(3),tbody td:nth-of-type(2){
+        // background: rgb(225, 93, 115);
+        width: 40%;
+    }
+}

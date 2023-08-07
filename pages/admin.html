@@ -25,7 +25,8 @@
             <h2 class="col-auto fs-4 fw-bold me-4">Admin</h2>
 
             <div class="col-auto fw-bold">
-              <a href="javascript:;" class="d-flex">
+              <!-- Button trigger modal -->
+              <a href="javascript:;" class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <span class="material-symbols-outlined me-2 link-success">
                   add
                 </span>Add New Admin
@@ -64,10 +65,12 @@
                     <td>emir.wicks@mail.com</td>
                     <td>Yes</td>
                     <td class="text-end">
-                      <a href="javascript:;"><span class="material-symbols-outlined bold me-3">
+                      <!-- Button trigger modal -->
+                      <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal1"><span class="material-symbols-outlined bold me-3">
                       visibility
                       </span></a>
-                      <a href="javascript:;"><span class="material-symbols-outlined bold">
+                      <!-- Button trigger modal -->
+                      <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal3"><span class="material-symbols-outlined bold">
                       edit
                       </span></a>
                     </td>
@@ -227,8 +230,238 @@
                 </ul>
               </nav>
             </div>
+
+            <!-- Modal 會員本人 -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <!-- Vertically centered modal -->
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content card" style="max-width: 480px;">
+                  <div class="row m-4 mb-0">
+                    <!-- 照片 -->
+                    <div class="col-4 position-relative overflow-hidden mb-4">
+                      <img src="../assets/images/emir.jpeg" alt="emir照片" class="position-absolute h-100 top-50 start-50 translate-middle">
+                    </div>
+                    <!-- 文字區 -->
+                    <div class="col-8 mb-4">
+                      <div class="card-body p-0 ps-2 d-flex flex-column">
+                        <div class="d-flex justify-content-between">
+                          <div class="mb-2">#1</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div>Admin</div>
+                        <h5 class="fs-4 fw-bold mb-2">Emir Wicks</h5>
+                        <p class="card-text fs-7 text-gray">emir.wicks@mail.com</p>
+                        <div class="d-flex justify-content-between">
+                          <div class="fs-7 bg-light py-1 px-2 rounded">Verified</div>
+                          <button class="btn link-success" id="dropdown-btn"><span class="material-symbols-outlined">
+                            expand_more
+                            </span></button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 下拉按鈕 -->
+                    <div class="col-8 d-flex ms-auto ps-3 mb-4 d-none" id="dropdown-menu">
+                      <button class="btn btn-outline-danger fw-bold w-100 me-3">Deactivate</button>
+                      <button class="btn btn-success fw-bold w-75" data-bs-toggle="modal" data-bs-target="#exampleModal3">Edit</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+
+            
+            <!-- Modal 新增 資料 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <!-- Scrollable modal -->
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <!-- nav -->
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold fs-4" id="exampleModalLabel">New Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- form -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="fs-5 fw-bold mb-3">Account</div>
+                      <!-- Account -->
+                      <div class="mb-3">
+                        <label for="exampleInputName" class="form-label mb-1 fs-7">Name</label>
+                        <input type="text" class="form-control border-dark py-3" id="exampleInputName" aria-describedby="nameHelp">
+                      </div>
+                      <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label mb-1 fs-7">Email</label>
+                        <input type="email" class="form-control border-dark py-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+
+                      <!-- Verification -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Verification</div>
+                        <div class="d-flex fw-bold mb-3">
+                          <span class="material-symbols-outlined bold text-danger me-1">
+                            warning
+                            </span>
+                          Unverified
+                        </div>
+                        <button class="btn btn-outline-success w-100 py-3 fw-bold">Send Verification Mail</button>
+                      </div>
+
+                      <!-- Access Level -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Access Level</div>
+                        <div class="dropdown">
+                          <button class="btn btn-outline-dark w-100 text-start py-3 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            -Choose access level-
+                          </button>
+                          <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Custom Access -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Custom Access</div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Lecture</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                          <label class="form-check-label" for="exampleCheck2">Coupon</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                          <label class="form-check-label" for="exampleCheck3">Message</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                          <label class="form-check-label" for="exampleCheck4">Setting</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                          <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- 按鈕群 -->
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-outline-success fw-bold w-25 me-3 ms-auto">Cancel</button>
+                    <button type="submit" class="btn btn-success fw-bold w-25">Add</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modal 編輯 原有資料 -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <!-- Scrollable modal -->
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <!-- nav -->
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold fs-4" id="exampleModalLabel">Edit Admin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- form -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="fs-5 fw-bold mb-3">Account</div>
+                      <!-- Account -->
+                      <div class="mb-3">
+                        <label for="exampleInputName" class="form-label mb-1 fs-7">Name</label>
+                        <input type="text" class="form-control py-3 border-0" id="exampleInputName" aria-describedby="nameHelp" value="Emir Wicks" disabled readonly>
+                      </div>
+                      <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label mb-1 fs-7">Email</label>
+                        <input type="email" class="form-control py-3 border-0" id="exampleInputEmail1" aria-describedby="emailHelp" value="emir.wicks@mail.com" disabled readonly>
+                      </div>
+
+                      <!-- Verification -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Verification</div>
+                        <div class="d-flex fw-bold mb-3">
+                          <span class="material-symbols-outlined bold text-success me-1">
+                            check_circle
+                            </span>
+                          Unverified
+                          <time class="ms-auto fw-normal">2020/4/12</time>
+                        </div>
+                        <button class="btn btn-outline-secondary w-100 py-3 fw-bold" disabled>Send Verification Mail</button>
+                      </div>
+
+                      <!-- Access Level -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Access Level</div>
+                        <div class="dropdown">
+                          <button class="btn btn-outline-dark w-100 text-start py-3 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            -Choose access level-
+                          </button>
+                          <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Custom Access -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Custom Access</div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                          <label class="form-check-label" for="exampleCheck6">Lecture</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                          <label class="form-check-label" for="exampleCheck7">Coupon</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                          <label class="form-check-label" for="exampleCheck8">Message</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                          <label class="form-check-label" for="exampleCheck9">Setting</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck10">
+                          <label class="form-check-label" for="exampleCheck10">Task Menu</label>
+                        </div>
+                      </div>
+
+                      <!-- Deactivate Account -->
+                      <div class="py-4 border-top border-gray">
+                        <div class="fs-5 fw-bold mb-3">Deactivate Account</div>
+                        <div class="mb-3 text-danger">
+                          <span class="material-symbols-outlined bold me-1">
+                            warning
+                            </span>This cannot be undone!
+                        </div>
+                        <button class="btn btn-outline-danger w-100 py-3 fw-bold">Deactivate This Account</button>
+                      </div>
+
+                    </form>
+                  </div>
+
+                  <!-- 按鈕群 -->
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-outline-success fw-bold w-25 me-3 ms-auto">Cancel</button>
+                    <button type="submit" class="btn btn-success fw-bold w-25">Add</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -242,10 +475,12 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function() {
-        $('#textEditor').hide();
-        $('#Reply,#Cancel').click(function(event){
-          $('#textEditor').slideToggle(800);
+
+        $('#dropdown-btn').click(function(event){
+          $('#dropdown-menu').toggleClass('d-none');
+          $(this).toggleClass('rotate-180');
         });
+
 
       });
     </script>
