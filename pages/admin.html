@@ -7,7 +7,7 @@
     <title>ANSWER</title>
     <link rel="shortcut icon" href="../assets/images/favicon.ico" />
     <!-- js css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
   </head>
   <body>
 
@@ -27,7 +27,7 @@
             <div class="col-auto fw-bold">
               <!-- Button trigger modal -->
               <a href="javascript:;" class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                <span class="material-symbols-outlined me-2 link-success">
+                <span class="material-symbols-outlined me-2 link-primary">
                   add
                 </span>Add New Admin
               </a>
@@ -46,10 +46,10 @@
           <div class="row">
             <!-- 表格 -->
             <div class="col-12 mb-5">
-              <table class="table">
+              <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">ID<span class="material-symbols-outlined text-success fs-5 ms-1">
+                    <th scope="col">ID<span class="material-symbols-outlined text-primary fs-5 ms-1">
                       arrow_downward
                       </span></th>
                     <th scope="col">Name</th>
@@ -60,7 +60,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">#1</th>
+                    <th scope="row" class="fw-normal">#1</th>
                     <td>Emir Wicks</td>
                     <td>emir.wicks@mail.com</td>
                     <td>Yes</td>
@@ -76,7 +76,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#2</th>
+                    <th scope="row" class="fw-normal">#2</th>
                     <td>Zaina Goldsmith</td>
                     <td>zaina.goldsmith@mail.com</td>
                     <td>Yes</td>
@@ -90,7 +90,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#3</th>
+                    <th scope="row" class="fw-normal">#3</th>
                     <td>Mahima Lopez</td>
                     <td>mahima.lopez@mail.com</td>
                     <td>Yes</td>
@@ -104,7 +104,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#4</th>
+                    <th scope="row" class="fw-normal">#4</th>
                     <td>Pharrell Murray</td>
                     <td>pharrell.murray@mail.com</td>
                     <td>Yes</td>
@@ -118,7 +118,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#5</th>
+                    <th scope="row" class="fw-normal">#5</th>
                     <td>Annika Mcbride</td>
                     <td>annika.mcbride@mail.com</td>
                     <td>Yes</td>
@@ -132,7 +132,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#6</th>
+                    <th scope="row" class="fw-normal">#6</th>
                     <td>Fatimah Clark</td>
                     <td>fatimah.clark@mail.com</td>
                     <td>Yes</td>
@@ -146,7 +146,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#7</th>
+                    <th scope="row" class="fw-normal">#7</th>
                     <td>Klaudia Rhodes</td>
                     <td>klaudia.rhodes@mail.com</td>
                     <td>Yes</td>
@@ -160,7 +160,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#8</th>
+                    <th scope="row" class="fw-normal">#8</th>
                     <td>Tillie Lucero</td>
                     <td>tillie.lucero@mail.com</td>
                     <td>Yes</td>
@@ -174,7 +174,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#9</th>
+                    <th scope="row" class="fw-normal">#9</th>
                     <td>Sabrina Stephenson</td>
                     <td>sabrina.stephenson@mail.com</td>
                     <td>Yes</td>
@@ -188,7 +188,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">#10</th>
+                    <th scope="row" class="fw-normal">#10</th>
                     <td>Annie Smith</td>
                     <td>annie.smith@mail.com</td>
                     <td>Yes</td>
@@ -208,20 +208,19 @@
             <!-- 頁數 -->
             <div class="col-12">
               <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
+                <ul class="pagination justify-content-end link-dark">
                   <li class="page-item">
-                    <a class="page-link link-success" href="#" aria-label="Previous">
-                      <!-- <span>&laquo;</span> -->
+                    <a class="page-link link-primary h-100" href="#" aria-label="Previous">
                       <span aria-hidden="true" class="material-symbols-outlined">
                         chevron_left
                         </span>
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link h-100 active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link h-100" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link h-100" href="#">3</a></li>
                   <li class="page-item">
-                    <a class="page-link link-success" href="#" aria-label="Next">
+                    <a class="page-link link-primary h-100" href="#" aria-label="Next">
                       <span aria-hidden="true" class="material-symbols-outlined">
                         navigate_next
                         </span>
@@ -231,11 +230,11 @@
               </nav>
             </div>
 
-            <!-- Modal 會員本人 -->
+            <!-- Modal 觀看會員 -->
             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <!-- Vertically centered modal -->
               <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content card" style="max-width: 480px;">
+                <div class="modal-content card rounded-0" style="max-width: 480px;">
                   <div class="row m-4 mb-0">
                     <!-- 照片 -->
                     <div class="col-4 position-relative overflow-hidden mb-4">
@@ -253,29 +252,35 @@
                         <p class="card-text fs-7 text-gray">emir.wicks@mail.com</p>
                         <div class="d-flex justify-content-between">
                           <div class="fs-7 bg-light py-1 px-2 rounded">Verified</div>
-                          <button class="btn link-success" id="dropdown-btn"><span class="material-symbols-outlined">
-                            expand_more
-                            </span></button>
+                          <!-- collapse 按鈕 -->
+                          <a class="p-1" id="collapse-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="material-symbols-outlined">
+                              expand_more
+                              </span>
+                          </a>
                         </div>
                       </div>
                     </div>
-
-                    <!-- 下拉按鈕 -->
-                    <div class="col-8 d-flex ms-auto ps-3 mb-4 d-none" id="dropdown-menu">
-                      <button class="btn btn-outline-danger fw-bold w-100 me-3">Deactivate</button>
-                      <button class="btn btn-success fw-bold w-75" data-bs-toggle="modal" data-bs-target="#exampleModal3">Edit</button>
+                    <!-- collapse -->
+                    <div class="collapse col-8 ms-auto" id="collapseExample">
+                      <div class="d-flex ps-2 mb-4">
+                        <button class="btn btn-outline-danger fw-bold w-100 me-3">Deactivate</button>
+                        <button class="btn btn-primary fw-bold w-75" data-bs-toggle="modal" data-bs-target="#exampleModal3">Edit</button>
+                      </div>
                     </div>
+                    </div>
+                
                   </div>
                   </div>
                 </div>
             </div>
 
             
-            <!-- Modal 新增 資料 -->
+            <!-- Modal 新增會員 -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <!-- Scrollable modal -->
               <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
+                <div class="modal-content rounded-0">
                   <!-- nav -->
                   <div class="modal-header">
                     <h5 class="modal-title fw-bold fs-4" id="exampleModalLabel">New Admin</h5>
@@ -304,7 +309,7 @@
                             </span>
                           Unverified
                         </div>
-                        <button class="btn btn-outline-success w-100 py-3 fw-bold">Send Verification Mail</button>
+                        <button class="btn btn-outline-primary w-100 py-3 fw-bold">Send Verification Mail</button>
                       </div>
 
                       <!-- Access Level -->
@@ -351,19 +356,19 @@
 
                   <!-- 按鈕群 -->
                   <div class="modal-footer">
-                    <button type="reset" class="btn btn-outline-success fw-bold w-25 me-3 ms-auto">Cancel</button>
-                    <button type="submit" class="btn btn-success fw-bold w-25">Add</button>
+                    <button type="reset" class="btn btn-outline-primary fw-bold w-25 me-3 ms-auto">Cancel</button>
+                    <button type="submit" class="btn btn-primary fw-bold w-25">Add</button>
                   </div>
 
                 </div>
               </div>
             </div>
             
-            <!-- Modal 編輯 原有資料 -->
+            <!-- Modal 編輯 原有會員 -->
             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <!-- Scrollable modal -->
               <div class="modal-dialog modal-dialog-scrollable">
-                <div class="modal-content">
+                <div class="modal-content rounded-0">
                   <!-- nav -->
                   <div class="modal-header">
                     <h5 class="modal-title fw-bold fs-4" id="exampleModalLabel">Edit Admin</h5>
@@ -393,7 +398,7 @@
                           Unverified
                           <time class="ms-auto fw-normal">2020/4/12</time>
                         </div>
-                        <button class="btn btn-outline-secondary w-100 py-3 fw-bold" disabled>Send Verification Mail</button>
+                        <button class="btn btn-outline-sprimary w-100 py-3 fw-bold" disabled>Send Verification Mail</button>
                       </div>
 
                       <!-- Access Level -->
@@ -452,8 +457,8 @@
 
                   <!-- 按鈕群 -->
                   <div class="modal-footer">
-                    <button type="reset" class="btn btn-outline-success fw-bold w-25 me-3 ms-auto">Cancel</button>
-                    <button type="submit" class="btn btn-success fw-bold w-25">Add</button>
+                    <button type="reset" class="btn btn-outline-primary fw-bold w-25 me-3 ms-auto">Cancel</button>
+                    <button type="submit" class="btn btn-primary fw-bold w-25">Add</button>
                   </div>
 
                 </div>
@@ -476,11 +481,9 @@
     <script>
       $(document).ready(function() {
 
-        $('#dropdown-btn').click(function(event){
-          $('#dropdown-menu').toggleClass('d-none');
+        $('#collapse-btn').click(function(event){
           $(this).toggleClass('rotate-180');
         });
-
 
       });
     </script>

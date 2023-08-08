@@ -1,17 +1,21 @@
+
+// bs
+@import "../node_modules/bootstrap/scss/functions";
+// bs 自己改變數 helpers
+@import "./helpers/variables";
+
+
 // base
-@import './base/variable';
 @import './base/base';
-
 // utils
-@import './utils/font';
-@import './utils/other';
-
-// components
-@import './components/Pagination';
-
+@import './utils/utils';
 // layout
 @import './layout/aside';
-
 // pages
 @import './pages/assignment';
 @import './pages/admin';
+
+
+
+// bs 完整檔案
+@import "../node_modules/bootstrap/scss/bootstrap";

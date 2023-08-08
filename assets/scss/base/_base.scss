@@ -7,29 +7,18 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    color: $gray-900;
-}
-a{
-    text-decoration: none;
-    color: inherit;
 }
 textarea{
-    border: none;
     resize: none;
-    padding: 16px 24px;
     height: 273px;
 }
 ::placeholder{
     color: $gray-400;
 }
-input:disabled:read-only{
-    background: $gray-100;
-}
 
 // google icon
 .material-symbols-outlined{
     vertical-align: middle;
-    // background: pink;
     &.bold{
         font-variation-settings:
         'FILL' 1,

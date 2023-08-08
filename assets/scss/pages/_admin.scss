@@ -1,15 +1,4 @@
 .table{
-    tr>*{
-        padding: 19px 0 17px;
-    }
-    tbody{
-        th{
-            font-weight: normal;
-        }
-    } 
-    tbody>tr:hover{
-        background: $gray-100;
-    }
     thead th:first-of-type,tbody th{
         // background: pink;
         width: 15%;

@@ -1,0 +1,15 @@
+// 字型
+.text-Roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.rotate-180{
+    transform: rotate(-180deg);
+}
+.border-gray{
+    border-color: $gray-100;
+}
+
+.bg-gray{
+    background: $gray-100;
+}
