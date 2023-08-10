@@ -12,3 +12,18 @@
         width: 40%;
     }
 }
+.collapsed .open {
+    display: inline-block;
+  }
+  
+.open {
+display: none;
+}
+
+.collapsed .close {
+display: none;
+}
+
+.close {
+display: inline-block;
+}
