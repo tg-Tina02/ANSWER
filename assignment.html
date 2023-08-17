@@ -6,17 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANSWER</title>
     <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADpElEQVRYhdWXT2gcZRjGf2+y1HiyWFfitkIFpbIDOUSUXgwyFRSE3rIHD9pTIFSxiVg97HRJZ/GgWCkahUJVCl4ml/ZSUIQVSil46G2nKAqCaWjZEESkllL27eH7Zndm9ptpuvUPvrDs7jff+z3P+7x/Zgb+z1YPGxP1sDFxP2eM7WyBPwRW7ofE5JjgACdAl0DmgMmq73V6ne4/T8BGewI4ApIszwGVcUg4pauHDVyypmQ/4nBrAmGJn9PEtWgdLihUBDYwn6uq+pSIHDK7FFTeR3gEWEi5nwJ+A3YDNYWawFYcRC+5sCquxTiI+vWwMSUwm2Erab7SRmihTNgwEhILGR/z9a0LB0q6QJWNomsobSAAXkZ4DljERF5k14ouOBUAECl0aiME9vfbwBYwb0lATgHDtziYsv7NOKmSRN6KgwhMel4ADgJPxkHUBw6jo0oIevWeCNgi3Js9hDaiLVsfAEvWfwfwJkAcRLdBR0ko+4o6oazVXksttxFacbDWt//3AI3U9UP1sPEwQHxs7TbCYdI1IfIGcNQSz1hmEA0nHEsp9m2EIA4irYcNqr5Xs3tmUq4PALuqvnep1+ne6HW6/arvnQceA56xe15U+Kvqexc3U8Nq0Fc28o8YDBkFJKl2FGYE3gJeBaZGQjH2J3BG4STwkxiFPydbmO8CH9g6MgoMZdclEANtwFvAAWBVTFpmKekcTD08K+iiILOg6yCnFKZlqMQB4GbV9y72Ot1t3g11W7sc5hy0GZsE6HW6WvW970AeAvYbN50DmQROI3wNnAUeBJ6mWIUbwGngdUVWBdaBzySbgvfIpyBF4htgJ7Dfsp9DqSB04iC6XvW9c8CXoI+DeDnwL4BX4iBa63XizUd9byT/avN/xYI7NUq14XJqORlAfbtnD/ALJuco+ocgT8RBtGWvV4BVspEfZzjEBjZSAxbkHeBMarmJslIP55P968DgJEG+GoAfn6+gOXDVT4GVPLiTQIrEr+k1hSYqK/WwMWEP+hjoA7eAT4aRyyqSux8IPybq5a2spaYzZ5hkNS1QAFwGvsfcjH62qRsFBxTZXQRSRqBWsN60gyLADK7fcQ+cIfnis7avQO7EJoCiLUFKwe92lpOAlfOWwg8lj2RN20Qlj2RaAymMvpAApriev5IrHEtsC1gGQWxNpCzTrjk/p919VuZs9KaVAQ9crVZm9/xekJ2YmkzMscBhDAUSs0qcxHTBiOz/iv0dL6f/ud0BWLJNtbnDNP0AAAAASUVORK5CYII=" />
-    <!-- js css -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-    <style>
-      .main{
-        /* margin-left: 296px; */
-        /* margin-left: 200px; */
-      }
-
-    </style>
-    <script type="module" crossorigin src="/ANSWER/assets/main-e13a69a4.js"></script>
-    <link rel="stylesheet" href="/ANSWER/assets/main-efe0f564.css">
+    <script type="module" crossorigin src="/ANSWER/assets/main-2dfe2537.js"></script>
+    <link rel="stylesheet" href="/ANSWER/assets/main-b6656b23.css">
   </head>
   <body>
 
@@ -98,14 +89,67 @@
       <div class="row justify-content-end g-3">
         <!-- 左邊 list-group -->
         <div class="col-3">
-          <a href="javascript:;" class="d-block mb-1 fw-bold">
+          <div class="dropdown">
+            <a href="javascript:;" class="d-block mb-1 fw-bold" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              All (4)<span class="material-symbols-outlined ms-2 link-primary">
+                expand_more
+                </span>
+            </a>
+
+            <ul class="dropdown-menu show p-0 w-100" aria-labelledby="dropdownMenuButton1">
+              <!-- 1 -->
+              <li class="border-bottom"><a class="dropdown-item" aria-current="true">
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <div>Chapter Assignment 2</div>
+                  <div>4 hrs ago</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fw-bold text-truncate">Please check this file…</div>
+                  <div class="fs-8 text-secondary text-nowrap">Emily Wang</div>
+                </div>
+              </a></li>
+              <!-- 2 -->
+              <li class="border-bottom"><a class="dropdown-item" aria-current="true">
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <div>Chapter Assignment 1</div>
+                  <div>12 hrs ago</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fw-bold text-truncate">My Homework</div>
+                  <div class="fs-8 text-secondary text-nowrap">David Xu</div>
+                </div>
+              </a></li>
+              <!-- 3 -->
+              <li class="border-bottom"><a class="dropdown-item" aria-current="true">
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <div>Final Assignment</div>
+                  <div>18 hrs ago</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fw-bold text-truncate">Have a problem with this…</div>
+                  <div class="fs-8 text-secondary text-nowrap">Tony Wei</div>
+                </div>
+              </a></li>
+              <!-- 4 -->
+              <li><a class="dropdown-item" aria-current="true">
+                <div class="d-flex justify-content-between fs-8 mb-1">
+                  <div>Final Assignment</div>
+                  <div>19 hrs ago</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="fw-bold text-truncate">Did I do it right?</div>
+                  <div class="fs-8 text-secondary text-nowrap">Christina Lin</div>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+          <!-- <a href="javascript:;" class="d-block mb-1 fw-bold">
               All (4)
               <span class="material-symbols-outlined ms-2 link-primary">
             expand_more
             </span>
           </a>
           <ul class="list-group">
-            <!-- 1 -->
             <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
               <div class="d-flex justify-content-between fs-8 mb-1">
                 <div>Chapter Assignment 2</div>
@@ -116,7 +160,6 @@
                 <div class="fs-8 text-secondary text-nowrap">Emily Wang</div>
               </div>
             </a>
-            <!-- 2 -->
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex justify-content-between fs-8 mb-1">
                 <div>Chapter Assignment 1</div>
@@ -127,7 +170,6 @@
                 <div class="fs-8 text-secondary text-nowrap">David Xu</div>
               </div>
             </a>
-            <!-- 3 -->
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex justify-content-between fs-8 mb-1">
                 <div>Final Assignment</div>
@@ -138,7 +180,6 @@
                 <div class="fs-8 text-secondary text-nowrap">Tony Wei</div>
               </div>
             </a>
-            <!-- 4 -->
             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
               <div class="d-flex justify-content-between fs-8 mb-1">
                 <div>Final Assignment</div>
@@ -149,7 +190,7 @@
                 <div class="fs-8 text-secondary text-nowrap">Christina Lin</div>
               </div>
             </a>
-          </ul>
+          </ul> -->
         </div>
         <!-- 右邊 card -->
         <div class="col-7 position-relative">
@@ -179,7 +220,7 @@
                   <div class="fw-bold mb-1">Emily Wang</div>
                   <div class="fs-8 text-secondary mb-3">10:38 AM (4 hours ago)</div>
                   <p class="fs-7 mb-3">
-                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-primary bg-light p-1 text-Roboto">div</span> is bigger than the height of the <span class="text-primary bg-light p-1 text-Roboto">img</span>? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="bg-light p-1 text-Roboto">div</code> is bigger than the height of the <code class="bg-light p-1 text-Roboto">img</code>? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
                     What is the gap or extra space below image?
                   </p>
                   <button class="fw-bold btn btn-light py-2 px-3 border mb-3">
@@ -217,10 +258,10 @@
                   </p>
                   <ul class="fs-7">
                     <li>
-                      adjust the <span class="text-primary bg-light p-1 text-Roboto">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-primary bg-light p-1 text-Roboto">middle</span> ) or 
+                      adjust the <code class="bg-light p-1 text-Roboto">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="bg-light p-1 text-Roboto">middle</code> ) or 
                     </li>
                     <li>
-                      change the <span class="text-primary bg-light p-1 text-Roboto">display</span> so it isn’t inline.
+                      change the <code class="bg-light p-1 text-Roboto">display</code> so it isn’t inline.
                     </li>
                   </ul>
                 </div>
@@ -316,9 +357,8 @@
 
     
 
-    
     <!-- js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
+    
 
     <!-- jq -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
